@@ -6,9 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="images/hero.jpg">
     <script src="script/app.js" defer></script>
 </head>
 <body>
-    <h1>Rock Paper Scissors Game!</h1>
+    <div class="play-again">
+        <div class="center">
+            <button class="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero-title">
+            <h1 class="title">Rock Paper Scissors</h1>
+        </div>
+        <img class="hero-img" src="./images/hero.jpg" alt="RPS picture">
+    </section>
+
+    <main>
+        <section class="play-section">
+            <div class="play-container">
+                <div class="play-players">
+                    <p>Player</p>
+                    <p>Computer</p>
+                </div>
+                <div class="play-image">
+                    <img id="player" src="./images/rockright.png" alt="">
+                    <img id="computer" src="./images/rockleft.png" alt="">
+                </div>
+                <div class="play-score">
+                    <p class="player-score">0</p>
+                    <p class="draw"></p>
+                    <p class="computer-score">0</p>
+                </div>
+            </div>
+        </section>
+        <section class="player-section">
+            <div class="player-container">
+                <div class="player-title">
+                    <h2>Player choose your weapon</h2>
+                </div>
+                <div class="player-weapons">
+                    <button class="weapon-btn" data-id="rock"><img src="./images/rock.png" alt=""></button>
+                    <button class="weapon-btn" data-id="paper"><img src="./images/paper.png" alt=""></button>
+                    <button class="weapon-btn" data-id="scissors"><img src="./images/scissors.png" alt=""></button>
+                </div>
+                <div class="player-desc">
+                    <p>Rock</p>
+                    <p>Paper</p>
+                    <p>Scissors</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyrights &copy; Justine Edward P. Santos</p>
+        <div class="social-links">
+            <a target="_blank" href="https://github.com/hyxenon"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
